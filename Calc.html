@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calc.css">
+    <link rel="shortcut icon" href="ico/calc.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!--le container de la calculatrice-->
+    <div class="container">
+        <p class="info"> </p>
+        <!--l'ecran de la calculatrice-->
+        <form name="form">
+
+        <div class="resultat">
+            <input type="text" name="fenetre" class="fenetre" id="fenetre">
+        </div>
+        <!--les boutons de la calcultrice-->
+        <div class="btn">
+            
+             <div class="row">
+                 <input type="button" value="7" name="v7" 
+                 onclick="val(v7.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="8" name="v8" 
+                onclick="val(v8.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="9" name="v9"
+                 onclick="val(v9.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="+" name="plus" 
+                onclick="val(plus.value)" style="background: rgba(31, 31, 31, 0.692); color: aliceblue;">
+            </div>
+
+             <div class="row">
+                 <input type="button" value="4" name="v4" 
+                 onclick="val(v4.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="5" name="v5" 
+                onclick="val(v5.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="6" name="v6"
+                 onclick="val(v6.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="-" name="moins" 
+                onclick="val(moins.value)" style="background: rgba(31, 31, 31, 0.692); color: aliceblue;">
+            </div>
+
+             <div class="row">
+                 <input type="button" value="1" name="v1" 
+                 onclick="val(v1.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="2" name="v2" 
+                onclick="val(v2.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="3" name="v3"
+                 onclick="val(v3.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="x" name="fois" 
+                onclick="val(fois.value)" style="background: rgba(31, 31, 31, 0.692); color: aliceblue;">
+            </div>
+
+             <div class="row">
+                 <input type="button" value="0" name="v0" 
+                 onclick="val(v0.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="," name="dot" 
+                onclick="val(dot.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="/" name="div"
+                 onclick="val(div.value)" style="background: rgba(129, 161, 156, 0.8)">
+                 <input type="button" value="=" name="egal" 
+                onclick="calcul()" style="background: rgba(31, 31, 31, 0.692); color: aliceblue;">
+            </div>
+            <input type="button" class="reset" value="suppr." name="reset"
+            onclick="suppr()" style="background: rgba(8, 102, 74, 0.719); color: aliceblue;">
+        </div> 
+    </form>
+    </div>
+
+    <script src="Calc.js"></script>
+</body>
+</html>
